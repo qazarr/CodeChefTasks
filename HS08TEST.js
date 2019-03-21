@@ -1,7 +1,7 @@
 // Solution for ATM (HS08TEST) 
 
-var readline = require('readline');
-var rl = readline.createInterface({
+const readline = require('readline');
+const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
     terminal: false
@@ -13,7 +13,9 @@ rl.on('line', function(line){
       console.log(calculateTransaction(value, account));  
     }
 });
+
 const marge = 0.5;
+
 function calculateTransaction(sumInput, accountInput) {
     let sum = parseFloat(sumInput);
     let accountSum = parseFloat(accountInput).toFixed(2);
